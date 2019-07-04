@@ -10,3 +10,4 @@ Thanh vien:
 - NGUYEN DUY HUNG
 - NGUYEN VAN HIEP
 Link github: https://github.com/buingocdanh97/Nhom03_ISC09
+Link google drive: https://drive.google.com/drive/folders/1NDnmH0nz2_Fm-rcVWK5FIfHe7uZhCYpY
