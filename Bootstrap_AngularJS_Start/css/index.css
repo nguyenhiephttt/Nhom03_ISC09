@@ -1,0 +1,28 @@
+
+body{
+    background: #ffffff;
+    font-family: sans-serif;
+}
+/*bg-color-navigation*/
+.ml-one-col-test{
+    margin-left: 10%
+}
+/*navigation item*/
+.nav-item{
+    color: #ffffff !important;
+}
+
+/*button-gruop*/
+
+.button-group{
+    margin-left:28% !important; 
+}
+/*link*/
+.card a{
+    text-decoration:none;
+    color: #000000;
+}
+.card a:hover{
+    text-decoration:none !important;
+    color: #000000;
+}
