@@ -1,14 +1,15 @@
-1. Satisfy the customer:
-   Uu tiên cao nh?t c?a chúng tôi là th?a mãn khách hàng thông qua vi?c chuy?n giao s?m 
-   và liên t?c các ph?n m?m có giá tr?. 
+ï»¿1. Satisfy the customer:
+   Uu tiÃªn cao nh?t c?a chÃºng tÃ´i lÃ  th?a mÃ£n khÃ¡ch hÃ ng thÃ´ng qua vi?c chuy?n giao s?m 
+   vÃ  liÃªn t?c cÃ¡c ph?n m?m cÃ³ giÃ¡ tr?. 
 2. Welcome Change
-   Chào dón vi?c thay d?i các yêu c?u, th?m chí r?t mu?n, trong quá trình phát tri?n. 
-   Các quy trình Agile khai thác s? thay d?i cho các l?i th? c?nh tranh c?a khách hàng.
+   ChÃ o dÃ³n vi?c thay d?i cÃ¡c yÃªu c?u, th?m chÃ­ r?t mu?n, trong quÃ¡ trÃ¬nh phÃ¡t tri?n. 
+   CÃ¡c quy trÃ¬nh Agile khai thÃ¡c s? thay d?i cho cÃ¡c l?i th? c?nh tranh c?a khÃ¡ch hÃ ng.
+9. Continuous attention to technical:
+	Lien tuc quan tam den cac ki thuat vÃ  thiet ke tot de gia tang su linh hoat.
+10. Simplicity is essential:
+	 Su don gian â€“ nghe thuat toi da hoa luong cong viec chua xong â€“ la can ban.
 11. Self-Organizing teams
-	Các ki?n ??trúc t?t nh?t, yêu c?u t?t nh?t, và thi?t k? t?t nh?t s? du?c làm ra b?i các nhóm t? t? ch?c
+	CÃ¡c ki?n ??trÃºc t?t nh?t, yÃªu c?u t?t nh?t, vÃ  thi?t k? t?t nh?t s? du?c lÃ m ra b?i cÃ¡c nhÃ³m t? t? ch?c
 12. Reflect and adjust
-	Nhóm phát tri?n s? thu?ng xuyên suy nghi v? vi?c làm sao d? tr? nên hi?u qu? hon, sau dó h? s? di?u ch?nh và thay d?i các hành vi c?a mình cho phù h?p
-	
-	
-	
+	NhÃ³m phÃ¡t tri?n s? thu?ng xuyÃªn suy nghi v? vi?c lÃ m sao d? tr? nÃªn hi?u qu? hon, sau dÃ³ h? s? di?u ch?nh vÃ  thay d?i cÃ¡c hÃ nh vi c?a mÃ¬nh cho phÃ¹ h?p
 	
