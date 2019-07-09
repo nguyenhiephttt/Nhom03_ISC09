@@ -1,15 +1,13 @@
-﻿1. Satisfy the customer:
-   Uu tiên cao nh?t c?a chúng tôi là th?a mãn khách hàng thông qua vi?c chuy?n giao s?m 
-   và liên t?c các ph?n m?m có giá tr?. 
+1. Satisfy the customer:
+   Ưu tiên cao nhất của chúng tôi là thỏa mãn khách hàng thông qua việc chuyển giao sớm và liên tục các phần mềm có giá trị.
 2. Welcome Change
-   Chào dón vi?c thay d?i các yêu c?u, th?m chí r?t mu?n, trong quá trình phát tri?n. 
-   Các quy trình Agile khai thác s? thay d?i cho các l?i th? c?nh tranh c?a khách hàng.
+   Chào đón việc thay đổi các yêu cầu, thậm chí rất muộn, trong quá trình phát triển. Các quy trình Agile khai thác sự thay đổi cho các      lợi thế cạnh tranh của khách hàng.
 9. Continuous attention to technical:
-	Lien tuc quan tam den cac ki thuat và thiet ke tot de gia tang su linh hoat.
+    Lien tuc quan tam den cac ki thuat và thiet ke tot de gia tang su linh hoat.
 10. Simplicity is essential:
-	 Su don gian – nghe thuat toi da hoa luong cong viec chua xong – la can ban.
+    Su don gian – nghe thuat toi da hoa luong cong viec chua xong – la can ban.
 11. Self-Organizing teams
-	Các ki?n ??trúc t?t nh?t, yêu c?u t?t nh?t, và thi?t k? t?t nh?t s? du?c làm ra b?i các nhóm t? t? ch?c
-12. Reflect and adjust
-	Nhóm phát tri?n s? thu?ng xuyên suy nghi v? vi?c làm sao d? tr? nên hi?u qu? hon, sau dó h? s? di?u ch?nh và thay d?i các hành vi c?a mình cho phù h?p
+    Các kiến trúc tốt nhất, yêu cầu tốt nhất, và thiết kế tốt nhất sẽ được làm ra bởi các nhóm tự tổ chức.
+12. Reflect and adjust.
+    Nhóm phát triển sẽ thường xuyên suy nghĩ về việc làm sao để trở nên hiệu quả hơn, sau đó họ sẽ điều chỉnh và thay đổi các hành vi         của mình cho phù hợp.
 	
