@@ -9,7 +9,6 @@
    Thường xuyên chuyển giao phần mềm chạy tốt tới khách hàng, từ vài tuần đến vài tháng, ưu tiên cho các khoảng thời gian ngắn hơn.
 4. Work together
    Nhà kinh doanh và nhà phát triển phần mềm phải làm việc cùng nhau hàng ngày trong suốt dự án.
-=======
    Ưu tiên cao nhất của chúng tôi là thỏa mãn khách hàng thông qua việc chuyển giao sớm và liên tục các phần mềm có giá trị.
 2. Welcome Change
    Chào đón việc thay đổi các yêu cầu, thậm chí rất muộn, trong quá trình phát triển. Các quy trình Agile khai thác sự thay đổi cho các      lợi thế cạnh tranh của khách hàng.
