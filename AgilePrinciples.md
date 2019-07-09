@@ -1,6 +1,10 @@
 1. Satisfy the customer:
-   Uu tiên cao nh?t c?a chúng tôi là th?a mãn khách hàng thông qua vi?c chuy?n giao s?m 
-   và liên t?c các ph?n m?m có giá tr?.
+   Uu tiï¿½n cao nh?t c?a chï¿½ng tï¿½i lï¿½ th?a mï¿½n khï¿½ch hï¿½ng thï¿½ng qua vi?c chuy?n giao s?m
+   vï¿½ liï¿½n t?c cï¿½c ph?n m?m cï¿½ giï¿½ tr?.
 2. Welcome Change
-   Chào dón vi?c thay d?i các yêu c?u, th?m chí r?t mu?n, trong quá trình phát tri?n. 
-   Các quy trình Agile khai thác s? thay d?i cho các l?i th? c?nh tranh c?a khách hàng.
+   Chï¿½o dï¿½n vi?c thay d?i cï¿½c yï¿½u c?u, th?m chï¿½ r?t mu?n, trong quï¿½ trï¿½nh phï¿½t tri?n.
+   Cï¿½c quy trï¿½nh Agile khai thï¿½c s? thay d?i cho cï¿½c l?i th? c?nh tranh c?a khï¿½ch hï¿½ng.
+3. Deliver frequently
+   ThÆ°á»ng xuyÃªn chuyá»ƒn giao pháº§n má»m cháº¡y tá»‘t tá»›i khÃ¡ch hÃ ng, tá»« vÃ i tuáº§n Ä‘áº¿n vÃ i thÃ¡ng, Æ°u tiÃªn cho cÃ¡c khoáº£ng thá»i gian ngáº¯n hÆ¡n.
+4. Work together
+   NhÃ  kinh doanh vÃ  nhÃ  phÃ¡t triá»ƒn pháº§n má»m pháº£i lÃ m viá»‡c cÃ¹ng nhau hÃ ng ngÃ y trong suá»‘t dá»± Ã¡n.
