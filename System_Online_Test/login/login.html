@@ -26,8 +26,8 @@
                             <h4>Sign in or create an Account</h4>
                         </div>
                         <div class="mt-4 p-3">
-                            <div class="row" ng-app="Login" ng-controller="myCtrl" ng-submit="checkform()">
-                                <form action="" method="POST" class="input-group">
+                            <div class="row">
+                                <form action="" method="POST" class="input-group" ng-app="Login" ng-controller="myCtrl" ng-submit="checkform()">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">
@@ -43,11 +43,7 @@
                                             </span>
                                         </div>
                                         <input ng-model="Userpass" type="password" name="senha" class="form-control" placeholder="Password">
-                                    </div>
-                                    <span class="text-danger mt-2">
-                                        E-mail or password incorrect!
-                                    </span>
-
+                                    </div>                                  
                                 </div>
                             </div>
                             <em class="text-muted">or sign in using:</em>

@@ -16,6 +16,7 @@ app.controller('myCtrl', function($scope, $http,$window) {
              })
              if(d==0){
                alert("Đăng nhập thất bại");
+                $window.location.href= 'login.html';
              }
       });
     }
