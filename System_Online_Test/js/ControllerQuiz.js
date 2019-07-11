@@ -31,16 +31,18 @@ app.controller('myCtrl', function($scope, $http) {
   $scope.prev= function(){
     if(d>0 && i>0){
     d=d-1;
-    i=i-1;
+    i=i-3;
     $scope.mydata;
     $http.get("../db/Quizs/ADAV.js").then(function(response){
       $scope.mydata=response.data;
-      if($scope.answer==$scope.mydata[d].AnswerId){
-        array[i]=1;
-      }
-      else {
-        array[i]=0;
-      }
+      array[i]=$scope.answer
+      array[i+1]=$scope.mydata[d].AnswerId
+      angular.forEach($scope.mydata[d].Answers, function(item){
+               if(item.Id==array[i+1]){
+                array[i+2]=item.Text;
+
+              }
+           })
 
       if(d<count){
         $http.get("../db/Quizs/ADAV.js").then(function(response){
@@ -67,14 +69,16 @@ app.controller('myCtrl', function($scope, $http) {
     $scope.mydata;
     $http.get("../db/Quizs/ADAV.js").then(function(response){
       $scope.mydata=response.data;
-      if($scope.answer==$scope.mydata[d].AnswerId){
-        array[i]=1;
-      }
-      else {
-        array[i]=0;
-      }
+      array[i]=$scope.answer
+      array[i+1]=$scope.mydata[d].AnswerId
+      angular.forEach($scope.mydata[d].Answers, function(item){
+               if(item.Id==array[i+1]){
+                array[i+2]=item.Text;
+
+              }
+           })
       d=d+1;
-      i=i+1;
+      i=i+3;
       if(d<count){
         $http.get("../db/Quizs/ADAV.js").then(function(response){
           $scope.mydata=response.data;
@@ -95,12 +99,41 @@ app.controller('myCtrl', function($scope, $http) {
         var myEl = angular.element( document.querySelector( '#remove' ) );
         myEl.remove();
           var c=0;
-          for(i=0;i<array.length;i++){
-            if(array[i]==1)
+          for(i=0;i<array.length;i=i+3){
+            if(array[i]==array[i+1])
               c=c+1;
             }
           $scope.result='Bạn đã làm đúng: '+c + ' / ' + count;
+          $scope.status;
+          if(c<=30){
+            $scope.status="bạn ngu quá"
+          }
+          else if(c<=50){
+            $scope.status="bạn ok"
+          }
+          else if(c<=70){
+            $scope.status="bạn giỏi"
+          }
+          else if(c<=75){
+            $scope.status="ăn cl gì giỏi vậy"
+          }
+
+          $scope.answerResult=[];
+          var j=0;
+          for(i=0;i<array.length;i=i+3){
+            if(array[i]==array[i+1]){
+              $scope.answerResult.push("Câu " + (j+1) + ": Đúng");
+            }
+
+            else {
+
+              $scope.answerResult.push("Câu " + (j+1) + ": Sai. Kết quả đúng là: "+array[i+2]);
+
+
+            }
+            j=j+1;
         }
+      }
     })
   }
 
