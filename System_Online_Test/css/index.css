@@ -15,7 +15,7 @@ body{
 /*button-gruop*/
 
 .button-group{
-    margin-left:28% !important; 
+    margin-left:28% !important;
 }
 /*link*/
 .card a{
@@ -25,4 +25,12 @@ body{
 .card a:hover{
     text-decoration:none !important;
     color: #000000;
+}
+/*link sideba*/
+.link-sidebar{
+  color: #000000 !important;
+}
+
+.link-sidebar:hover{
+  text-decoration: none !important;
 }

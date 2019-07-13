@@ -60,63 +60,57 @@
   </div>
   <div class="container">
     <div class="row m-auto">
-      <div class="col-8 mt-2" ng-app="Quizs" ng-controller="myCtrl">
-        <div id="remove">
-          <div class="card ">
-            <div class="card-header">
-              <p class="fas fa-list-ul mark-question-align-left card-header-topic"> xây dựng trang web</p>
-              <p class="mark-text-align-right far fa-clock mt-1">00:00</p>
-            </div>
-            <div class="card-body">
-              <p class="card-text">{{question}}</p>
-              <hr>
-              <form action="" method="">
-                <div class="custom-control custom-radio">
-                  <input ng-model="answer" type="radio" id="customRadioA" name="customRadio" class="custom-control-input" ng-value="Id1">
-                  <label class="custom-control-label" for="customRadioA">{{answer1}} </label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input ng-model="answer" type="radio" id="customRadioB" name="customRadio" class="custom-control-input" ng-value="Id2">
-                  <label class="custom-control-label" for="customRadioB">{{answer2}} </label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input ng-model="answer" type="radio" id="customRadioC" name="customRadio" class="custom-control-input" ng-value="Id3">
-                  <label class="custom-control-label" for="customRadioC">{{answer3}} </label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input ng-model="answer" type="radio" id="customRadioD" name="customRadio" class="custom-control-input" ng-value="Id4">
-                  <label class="custom-control-label" for="customRadioD">{{answer4}} </label>
-                </div>
-              </form>
-            </div>
-            <div class="card-footer text-muted">
-              <p class="mark-question-align-left">Mark {{questionNumber}}</p>
-            </div>
+      <div class="col-8 mt-2">
+        <div class="card ml-5">
+          <div class="card-header">
+            Câu Hỏi Thường Gặp
           </div>
-          <div class="container mt-2">
-            <div class="row button-group-topic">
-              <div class="btn-group ">
-                <button type="button" class="btn btn-outline-dark">
-                  <a href="#"><i class="fas fa-angle-left" ng-click="prev()"></i></a>
-                </button>
-                <button type="button" class="btn btn-outline-dark">
-                  <a href="#"><i class="fas fa-angle-up"></i></a>
-                </button>
-                <button type="button" class="btn btn-outline-dark">
-                  <a href="#"><i class="fas fa-angle-down"></i></a>
-                </button>
-                <button type="button" class="btn btn-outline-dark" ng-click="next()">
-                  <a href="#"><i class="fas fa-angle-right"></i></a>
-                </button>
-
+          <div class="card-body">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Tôi chưa có tài khoản, tôi tạo tài khoản bằng cách nào?</h5>
+                <hr>
+                <p class="card-title">
+                  Để tạo tài khoản bạn nhấp chọn vào phần <b>Tài khoản</b> tiếp theo chọn mục <b>Đăng Ký</b> điền đầy đủ thông tin và nhấp vào <b>Đăng Ký</b>
+                  để tạo tài khoản, sau đó bạn có thể sử dụng tài khoản này để sử dụng các dịch vụ của Online Test.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Tôi không nhớ mật khẩu của mình, tôi lấy lại tài khoản bằng cách nào?</h5>
+                <hr>
+                <p class="card-title">Khi bạn quên mật khẩu của mình, bạn có thể nhấp chọn vào phần <b>Tài khoản</b> sau đó chọn <b>Quên Mật Khẩu</b>
+                  điền vào Email và bấm xác nhận. Chúng tôi sẽ gửi cho bạn liên kết để đặt lại mật khẩu. Bạn vui lòng kiểm tra Email của mình để nhận
+                  được liên kết, sau đó nhấp vào liên kết để vào trang đặt lại mật khẩu. Ở trang đặt lại mật khẩu bạn nhập lại mật khẩu mới và nhấp vào
+                  <b>Đặt Lại Mật Khẩu</b> để xác nhận đổi mật khẩu.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Khi đang làm bài trắc nghiệm, tôi bị ngắt kết nối mạng vậy kết quả của tôi được lưu lại không?</h5>
+                <hr>
+                <p class="card-title">Khi mất kết nối các thông tin bài trắc nghiệm của bạn sẽ không được bảo lưu</p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Làm cách nào để làm bài trắc nghiệm hiệu quả hơn?</h5>
+                <hr>
+                <h6 class="card-title">Mỗi bài trắc nghiệm điều có đồng hồ riêng, khi làm bài bạn nên chú ý vào khoản thời gian mình có để chia khoản thời gian để
+                  làm bài hợp lý. Ngoài ra bạn nên chuẩn bị tốt kiến thức của mình về chủ đề bạn muốn kiểm tra để làm bài hiệu quả hơn</h6>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Điểm của tôi có được lưu lại hay không?</h5>
+                <hr>
+                <h6 class="card-title">Điểm số của người dùng sẽ không được lưu lại trong hệ thống</h6>
               </div>
             </div>
           </div>
-
         </div>
-        <p>{{result}} {{status}}</p><br>
-        <p ng-repeat="x in answerResult">{{x}}</p><br>
-
       </div>
       <div class="col-4 mt-2">
         <div class="card" style="width: 18rem;">
@@ -140,14 +134,10 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
-
   </div>
-
   <footer>
-
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="/js/ControllerQuiz.js"></script>
