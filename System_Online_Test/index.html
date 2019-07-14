@@ -2,25 +2,131 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Online Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="fonts/fontawesome-free-5.9.0-web/css/all.min.css">
+    <script src="js/maincontroller.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Test</title>
 
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-free-5.9.0-web/css/all.min.css">
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="/js/ControllerQuiz.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!--<script src="main1controller.js"></script>-->
 </head>
 
-<body ng-app="Quizs">
-  <div ng-view> </div>
 
+<body>
+    <header>
+        <div class="container">
+            <img src="/images/banner.png" class="rounded" alt="Cinque Terre">
+        </div>
+    </header>
+    <div class="container">
+        <nav id="nav" class="navbar navbar-expand-sm navbar-light bg-dark">
+            <a class="navbar-brand nav-item" href="/index.html">FPT Polytechnic</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-navbar ">
+                    <li class=" active">
+                        <a class="nav-link nav-item" href="#">Giới Thiệu <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-item" href="#">Liên Hệ</a>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-item" href="#">Gợi Ý</a>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-item " href="#">Hỏi Đáp</a>
+                    </li>
+                </ul>
+                <div class="dropdown my-2 my-lg-0">
+                    <a class="nav-link dropdown-toggle nav-item" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Tài Khoản</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="/register/register.html">Đăng Ký</a>
+                        <a class="dropdown-item" href="/login/login.html">Đăng Nhập</a>
+                        <a class="dropdown-item" href="#">Quên Mật Khẩu</a>
+                        <hr>
+                        <a class="dropdown-item" href="#">Đăng Xuất</a>
+                        <a class="dropdown-item" href="#">Đổi Mật Khẩu</a>
+                        <a class="dropdown-item" href="#">Cập Nhật Tài Khoản</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-4"  ng-app="mainApp" ng-controller="mainController">
+        <div class="row">
+            <div class="col-9">
+                <div class="container ml-2" >
+                    <div class="row">
+                        <div class="card-columns ">
+                            <div class="card ml-0 " ng-repeat="birds in mydata" >
+                                <a href="/test/test.html">
+                                    <div class="card-body" >
+                                        <blockquote class="blockquote mb-0" >
+                                            <p>{{birds.Id}}</p>
+                                            <img ng-src="images/logos/{{birds.Logo}}" alt="">
+                                        </blockquote>
+                                    </div>
+                                    <div class="card-footer" >
+                                        {{birds.Name}}
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-2" >
+                <div class="card" style="width: 18rem;" ng-app="mainApp" ng-controller="mainController">
+                    <div class="card-header fas fa-list-ul">
+                        DANH MỤC
+                    </div>
+                    <ul class="list-group list-group-flush "  >
+                        <li class="list-group-item p-2 pl-3" ng-repeat="x in mydata"><a href="#">{{x.Name}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row button-group">
+                <div class="btn-group ">
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="#"><i class="fas fa-angle-left"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="#"><i class="fas fa-angle-up"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                        <a href="#"><i class="fas fa-angle-right"></i></a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+     </footer>
 </body>
+
 
 
 </html>
