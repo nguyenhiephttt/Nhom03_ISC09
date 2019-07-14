@@ -128,16 +128,16 @@ app.controller('myCtrl', function($scope, $http) {
           $scope.result='Bạn đã làm đúng: '+c + ' / ' + count;
           $scope.status;
           if(c<=30){
-            $scope.status="bạn ngu quá"
+            $scope.status="Bạn làm chưa tốt lắm"
           }
           else if(c<=50){
-            $scope.status="bạn ok"
+            $scope.status="Bạn làm khá tốt"
           }
           else if(c<=70){
-            $scope.status="bạn giỏi"
+            $scope.status="Bạn làm rất giỏi"
           }
           else if(c<=75){
-            $scope.status="ăn cl gì giỏi vậy"
+            $scope.status="Bạn đã lám đúng hết !!!"
           }
 
           $scope.answerResult=[];
