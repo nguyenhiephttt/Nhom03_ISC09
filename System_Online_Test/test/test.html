@@ -16,7 +16,7 @@
   <script src="/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body >
   <header>
     <div class="container">
       <img src="/images/banner.png" class="rounded" alt="Cinque Terre">
@@ -60,9 +60,9 @@
   </div>
   <div class="container">
     <div class="row m-auto">
-      <div class="col-8 mt-2" ng-app="Quizs" ng-controller="myCtrl">
+      <div class="col-8 mt-2"  >
         <div id="remove">
-          <div class="card ">
+          <div class="card " ng-app="Quizs">
             <div class="card-header">
               <p class="fas fa-list-ul mark-question-align-left card-header-topic"> xây dựng trang web</p>
               <p class="mark-text-align-right far fa-clock mt-1">00:00</p>
@@ -97,7 +97,7 @@
             <div class="row button-group-topic">
               <div class="btn-group ">
                 <button type="button" class="btn btn-outline-dark">
-                  <a href="#"><i class="fas fa-angle-left" ng-click="prev()"></i></a>
+                  <a ><i class="fas fa-angle-left" ng-click="prev()"></i></a>
                 </button>
                 <button type="button" class="btn btn-outline-dark">
                   <a href="#"><i class="fas fa-angle-up"></i></a>
@@ -106,7 +106,7 @@
                   <a href="#"><i class="fas fa-angle-down"></i></a>
                 </button>
                 <button type="button" class="btn btn-outline-dark" ng-click="next()">
-                  <a href="#"><i class="fas fa-angle-right"></i></a>
+                  <a ><i class="fas fa-angle-right"></i></a>
                 </button>
 
               </div>

@@ -11,161 +11,16 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="fonts/fontawesome-free-5.9.0-web/css/all.min.css">
 
-  <script src="js/angular.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="/js/ControllerQuiz.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="container">
-      <img src="images/banner.png" class="rounded" alt="Cinque Terre">
-    </div>
-  </header>
-  <div class="container">
-    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
-      <a class="navbar-brand nav-item" href="index.html">FPT Polytechnic</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-navbar ">
-          <li class=" active">
-            <a class="nav-link nav-item" href="#">Giới Thiệu <span class="sr-only">(current)</span></a>
-          </li>
-          <li>
-            <a class="nav-link nav-item" href="#">Liên Hệ</a>
-          </li>
-          <li>
-            <a class="nav-link nav-item" href="suggest/suggest.html">Gợi Ý</a>
-          </li>
-          <li>
-            <a class="nav-link nav-item " href="#">Hỏi Đáp</a>
-          </li>
-        </ul>
-        <div class="dropdown my-2 my-lg-0">
-          <a class="nav-link dropdown-toggle nav-item" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tài Khoản</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="register/register.html">Đăng Ký</a>
-            <a class="dropdown-item" href="login/login.html">Đăng Nhập</a>
-            <a class="dropdown-item" href="#">Quên Mật Khẩu</a>
-            <hr>
-            <a class="dropdown-item" href="#">Đăng Xuất</a>
-            <a class="dropdown-item" href="#">Đổi Mật Khẩu</a>
-            <a class="dropdown-item" href="#">Cập Nhật Tài Khoản</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="container mt-4">
-    <div class="row m-auto">
-      <div class="col-8 m-0">
-        <div class="container ml-5">
-          <div class="row">
-            <div class="card-columns ">
-              <div class="card ml-5 ">
-                <a href="test/test.html">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <img src="images/logos/ADAV.jpg" alt="">
-                    </blockquote>
-                  </div>
-                  <div class="card-footer">
-                    Quote
-                  </div>
-                </a>
-              </div>
+<body ng-app="Quizs">
+  <div ng-view> </div>
 
-              <div class="card ml-5">
-                <a href="test/test.html">
-                  <div class="card-body ">
-                    <blockquote class="blockquote mb-0">
-                      <img src="images/logos/ADAV.jpg" alt="">
-                    </blockquote>
-                  </div>
-                  <div class="card-footer">
-                    Quote
-                  </div>
-                </a>
-              </div>
-              <div class="card ml-5">
-                <a href="test/test.html">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <img src="images/logos/ADAV.jpg" alt="">
-                    </blockquote>
-                  </div>
-                  <div class="card-footer">
-                    Quote
-                  </div>
-                </a>
-              </div>
-              <div class="card ml-5">
-                <a href="test/test.html">
-                  <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                      <img src="images/logos/ADAV.jpg" alt="">
-                    </blockquote>
-                  </div>
-                  <div class="card-footer">
-                    Quote
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-header fas fa-list-ul">
-            DANH MỤC
-          </div>
-          <ul class="list-group list-group-flush ">
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình Android nâng cao</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Xây dựng trang web</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Cơ sở dữ liệu</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">SQL Server</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Internet Maketing</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình hướng đối tượng với Java</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình PHP</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Điện toán đám mây</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình Android cơ bản</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình game 2D</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Thiết kế giao diện trên Android</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Thiết kế web cho điện thoại di động</a></li>
-            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình ASP.NET</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row button-group">
-          <div class="btn-group ">
-            <button type="button" class="btn btn-outline-dark">
-              <a href="#"><i class="fas fa-angle-left"></i></a>
-            </button>
-            <button type="button" class="btn btn-outline-dark">
-              <a href="#"><i class="fas fa-angle-up"></i></a>
-            </button>
-            <button type="button" class="btn btn-outline-dark">
-              <a href="#"><i class="fas fa-angle-down"></i></a>
-            </button>
-            <button type="button" class="btn btn-outline-dark">
-              <a href="#"><i class="fas fa-angle-right"></i></a>
-            </button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  <footer>
-
-  </footer>
 </body>
+
 
 </html>
