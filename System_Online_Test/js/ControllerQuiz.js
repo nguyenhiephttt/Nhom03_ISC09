@@ -30,8 +30,34 @@ app.config(function($routeProvider) {
   })
   .when("/login", {
     templateUrl : "login/login.html",
+    controller : "loginCtrl"
+  })
+  .when("/introduce", {
+    templateUrl : "introduce/introduce.html",
   })
 
+});
+app.controller('loginCtrl', function($scope, $http,$location) {
+  $scope.checkform= function(){
+      $scope.Username;
+      $scope.Userpass;
+      $scope.mydata;
+      $http.get("../db/Students.js").then(function(response){
+        var d=0;
+        $scope.mydata=response.data;
+        angular.forEach($scope.mydata, function(item){
+                 if($scope.Username==item.email && $scope.Userpass==item.password){
+                   alert("Đăng nhập thành công");
+                   d=d+1;
+                   $location.url('/')
+                 }
+             })
+             if(d==0){
+               alert("Đăng nhập thất bại");
+                $location.url('/login')
+             }
+      });
+    }
 });
 app.controller("mainController", function ($scope, $http) {
 

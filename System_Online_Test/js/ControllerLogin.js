@@ -1,4 +1,5 @@
 var app = angular.module('Login', []);
+
 app.controller('myCtrl', function($scope, $http,$window) {
   $scope.checkform= function(){
       $scope.Username;
@@ -11,12 +12,12 @@ app.controller('myCtrl', function($scope, $http,$window) {
                  if($scope.Username==item.email && $scope.Userpass==item.password){
                    alert("Đăng nhập thành công");
                    d=d+1;
-                   $window.location.href= '../index.html';
+                   $window.location.href= '#';
                  }
              })
              if(d==0){
                alert("Đăng nhập thất bại");
-                $window.location.href= 'login.html';
+                $window.location.href= '#!login';
              }
       });
     }

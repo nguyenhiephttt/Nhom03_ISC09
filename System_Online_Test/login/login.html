@@ -27,7 +27,7 @@
                         </div>
                         <div class="mt-4 p-3">
                             <div class="row">
-                                <form action="" method="POST" class="input-group" ng-app="Login" ng-controller="myCtrl" ng-submit="checkform()">
+                                <form action="" method="POST" class="input-group" ng-app="Quizs"  >
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">
@@ -43,7 +43,7 @@
                                             </span>
                                         </div>
                                         <input ng-model="Userpass" type="password" name="senha" class="form-control" placeholder="Password">
-                                    </div>                                  
+                                    </div>
                                 </div>
                             </div>
                             <em class="text-muted">or sign in using:</em>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
 
-                            <input type="submit" class="btn-login my-3" value="ĐĂNG NHẬP">
+                            <input type="button" class="btn-login my-3" ng-click="checkform()" value="ĐĂNG NHẬP">
 
                             <span class="text-muted">
                                 Don't have an account? Click
@@ -74,7 +74,7 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-      		<script src="../js/ControllerLogin.js"></script>
+      		<script src="../js/ControllerQuizs.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
     </body>
 </html>
