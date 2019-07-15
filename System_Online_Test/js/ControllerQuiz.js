@@ -21,6 +21,17 @@ app.config(function($routeProvider) {
     templateUrl : "test/test.html",
     controller : "myCtrl3"
   })
+  .when("/suggest", {
+    templateUrl : "suggest/suggest.html",
+  })
+
+  .when("/register", {
+    templateUrl : "register/register.html",
+  })
+  .when("/login", {
+    templateUrl : "login/login.html",
+  })
+
 });
 app.controller("mainController", function ($scope, $http) {
 
