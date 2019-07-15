@@ -2,7 +2,8 @@ var app = angular.module('Quizs', ["ngRoute"]);
 app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
-    templateUrl : "main.html"
+    templateUrl : "main.html",
+    controller : "mainController"
   })
   .when("/test1", {
     templateUrl : "test/test.html",
@@ -20,6 +21,13 @@ app.config(function($routeProvider) {
     templateUrl : "test/test.html",
     controller : "myCtrl3"
   })
+});
+app.controller("mainController", function ($scope, $http) {
+
+    $http.get('../db/Subjects.js').then(function (response) {
+        // console.log("cccccccccccc");
+        $scope.mydata=response.data;
+    });
 });
 app.controller('myCtrl', function($scope, $http) {
   var d=0;

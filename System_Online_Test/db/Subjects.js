@@ -2,22 +2,26 @@
     {
         "Id": "ADAV",
         "Name": "Lập trình Android nâng cao",
-        "Logo": "ADAV.jpg"
+        "Logo": "ADAV.jpg",
+        "Url": "#!test1"
     },
     {
         "Id": "ADBS",
         "Name": "Lập trình Android cơ bản",
-        "Logo": "ADBS.jpg"
+        "Logo": "ADBS.jpg",
+        "Url": "#!test2"
     },
     {
         "Id": "ADTE",
         "Name": "Kiểm thử và triển khai ứng dụng Android",
-        "Logo": "ADTE.jpg"
+        "Logo": "ADTE.jpg",
+        "Url": "#!test3"
     },
     {
         "Id": "ADUI",
         "Name": "Thiết kế giao diện trên Android",
-        "Logo": "ADUI.jpg"
+        "Logo": "ADUI.jpg",
+        "Url": "#!test4"
     },
     {
         "Id": "ASNE",
