@@ -60,11 +60,50 @@ app.controller('loginCtrl', function($scope, $http,$location) {
     }
 });
 app.controller("mainController", function ($scope, $http) {
-
+  $scope.div=[];
+  var i;
+  var d=0;
     $http.get('../db/Subjects.js').then(function (response) {
         // console.log("cccccccccccc");
         $scope.mydata=response.data;
+        for(i=d;i<d+4;i=i+1){
+            $scope.div.push($scope.mydata[i]);
+          }
     });
+    $scope.next= function(){
+      d=d+4;
+      if(d<20){
+      $scope.div=[];
+      $http.get('../db/Subjects.js').then(function (response) {
+          // console.log("cccccccccccc");
+          $scope.mydata=response.data;
+          for(i=d;i<d+4;i=i+1){
+              $scope.div.push($scope.mydata[i]);
+            }
+
+      });
+    }
+
+
+    }
+    $scope.prev= function(){
+
+      if(d>=4){
+      d=d-4;
+      $scope.div=[];
+      $http.get('../db/Subjects.js').then(function (response) {
+          // console.log("cccccccccccc");
+          $scope.mydata=response.data;
+          for(i=d;i<d+4;i=i+1){
+              $scope.div.push($scope.mydata[i]);
+            }
+
+      });
+    }
+
+
+    }
+
 });
 app.controller('myCtrl', function($scope, $http) {
   var d=0;

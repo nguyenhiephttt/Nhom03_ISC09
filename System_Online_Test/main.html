@@ -68,8 +68,8 @@
       <div class="col-9">
         <div class="container ml-2">
           <div class="row">
-            <div class="card-columns ">
-              <div class="card ml-0 " ng-repeat="birds in mydata">
+            <div class="card-columns " id="remove">
+              <div class="card ml-0 " ng-repeat="birds in div" >
                 <a href="{{birds.Url}}">
                   <div class="card-body">
                     <blockquote class="blockquote mb-0">
@@ -99,11 +99,11 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" ng-app="Quizs">
       <div class="row button-group">
         <div class="btn-group ">
-          <button type="button" class="btn btn-outline-dark">
-            <a href="#"><i class="fas fa-angle-left"></i></a>
+          <button type="button" class="btn btn-outline-dark" ng-click="prev()">
+            <a ><i class="fas fa-angle-left"></i></a>
           </button>
           <button type="button" class="btn btn-outline-dark">
             <a href="#"><i class="fas fa-angle-up"></i></a>
@@ -111,8 +111,8 @@
           <button type="button" class="btn btn-outline-dark">
             <a href="#"><i class="fas fa-angle-down"></i></a>
           </button>
-          <button type="button" class="btn btn-outline-dark">
-            <a href="#"><i class="fas fa-angle-right"></i></a>
+          <button type="button" class="btn btn-outline-dark" ng-click="next()">
+            <a ><i class="fas fa-angle-right"></i></a>
           </button>
 
         </div>
