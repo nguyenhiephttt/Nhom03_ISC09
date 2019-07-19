@@ -71,8 +71,9 @@ app.controller("mainController", function ($scope, $http) {
           }
     });
     $scope.next= function(){
+
+      if(d<16){
       d=d+4;
-      if(d<20){
       $scope.div=[];
       $http.get('../db/Subjects.js').then(function (response) {
           // console.log("cccccccccccc");
@@ -135,23 +136,18 @@ app.controller('myCtrl', function($scope, $http) {
 
 
   $scope.prev= function(){
+
     if(d>0 && i>0){
-    d=d-1;
-    i=i-3;
+      d=d-1;
+      i=i-3;
     $scope.mydata;
     $http.get("../db/Quizs/ADAV.js").then(function(response){
       $scope.mydata=response.data;
       array[i]=$scope.answer
-      array[i+1]=$scope.mydata[d].AnswerId
-      angular.forEach($scope.mydata[d].Answers, function(item){
-               if(item.Id==array[i+1]){
-                array[i+2]=item.Text;
 
-              }
-           })
 
-      if(d<count){
-        $http.get("../db/Quizs/ADAV.js").then(function(response){
+
+
           $scope.mydata=response.data;
           $scope.question=$scope.mydata[d].Text;
           $scope.answer1=$scope.mydata[d].Answers[0].Text;
@@ -163,11 +159,12 @@ app.controller('myCtrl', function($scope, $http) {
           $scope.Id2=$scope.mydata[d].Answers[1].Id;
           $scope.Id3=$scope.mydata[d].Answers[2].Id;
           $scope.Id4=$scope.mydata[d].Answers[3].Id;
-        })
+
         $scope.questionNumber= (d+1)+' / '+count;
-      }
+
     });
   }
+
 }
 
 
@@ -183,9 +180,10 @@ app.controller('myCtrl', function($scope, $http) {
 
               }
            })
-      d=d+1;
-      i=i+3;
+           d=d+1;
+           i=i+3;
       if(d<count){
+
         $http.get("../db/Quizs/ADAV.js").then(function(response){
           $scope.mydata=response.data;
           $scope.question=$scope.mydata[d].Text;
