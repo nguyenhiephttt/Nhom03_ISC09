@@ -34,3 +34,20 @@ body{
 .link-sidebar:hover{
   text-decoration: none !important;
 }
+.card-with{
+    width: 100%;
+    position:relative ;
+    columns: count 2px; 
+}
+
+#shorten-string{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+/*m-left-button-group*/
+.m-left-button-group{
+    margin-left: 30%
+}
