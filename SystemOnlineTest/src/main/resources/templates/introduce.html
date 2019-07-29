@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Thiết Kế Website | Online Test</title>
+
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/css/test.css}">
+  <link rel="stylesheet" th:href="@{/fonts/fontawesome-free-5.9.0-web/css/all.min.css}">
+
+  <script th:src="@{/js/angular.min.js}"></script>
+  <script th:src="@{/js/jquery.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="/images/banner.png" class="rounded" alt="Cinque Terre">
+    </div>
+  </header>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+      <a class="navbar-brand nav-item" href="/index.html">FPT Polytechnic</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-navbar ">
+          <li class=" active">
+            <a class="nav-link nav-item" href="#!introduce">Giới Thiệu <span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="nav-link nav-item" href="#">Liên Hệ</a>
+          </li>
+          <li>
+            <a class="nav-link nav-item" href="#!suggest">Gợi Ý</a>
+          </li>
+          <li>
+            <a class="nav-link nav-item " href="#">Hỏi Đáp</a>
+          </li>
+        </ul>
+        <div class="dropdown my-2 my-lg-0">
+          <a class="nav-link dropdown-toggle nav-item" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tài Khoản</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#!register">Đăng Ký</a>
+            <a class="dropdown-item" href="#!login">Đăng Nhập</a>
+            <a class="dropdown-item" href="#">Quên Mật Khẩu</a>
+            <hr>
+            <a class="dropdown-item" href="#">Đăng Xuất</a>
+            <a class="dropdown-item" href="#">Đổi Mật Khẩu</a>
+            <a class="dropdown-item" href="#">Cập Nhật Tài Khoản</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row m-auto">
+      <div class="col-8 mt-2">
+        <div class="card ml-5">
+          <div class="card-header">
+            <b>Giới thiệu về chúng tôi</b>
+          </div>
+          <div class="card-body">
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Sự ra đời của chúng tôi</h5>
+                <hr>
+                <p class="card-title">
+                System Test Online được xấy dựngvào năm 2019, với niềm đam mê Công Nghệ Thông Tin, Chúng tôi đã xây dựng hệ thống này này với mong muốn tạo ra một môi trường để người học có thể kiểm tra lại kiên thức của mình qua những bài tập trắc nghiệm.
+                </br>
+                Cũng nhờ vào sự ủng hộ của tất cả mọi người, đặc biệt là những thành viên thuộc nhóm phát triển, chúng tôi đã & đang xây dựng một Hệ Thống có những đặc điểm khác biệt nhất trên thị trường. Chỉ duy nhất systemonlinetest.vn.
+                </p>
+              </div>
+            </div>
+
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Những chức năng chính</h5>
+                <hr>
+                <p class="card-title">
+                  <ul>
+                    <li>Tạo thành viên</li>
+                    <li>Làm bài kiểm tra</li>
+                    <li>Xem lịch sử làm bài kiểm tra</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="card mb-2">
+              <div class="card-body">
+                <h5 class="card-title" style="color:red;">Danh sách các chủ đề </h5>
+                <hr>
+                   <ul>
+                     <li>Lập trình android cơ bản và nâng cao</li>
+                     <li>Xây dựng trang web</li>
+                     <li>Cơ sở dữ liệu</li>
+                     <li>SQL Server</li>
+                     <li>Internet Maketing</li>
+                     <li>Lập trình hướng đối tượng với Java</li>
+                     <li>Lập trình PHP</li>
+                     <li>Điện toán đám mây</li>
+                     <li>Lập trình game 2D</li>
+                     <li>Thiết kế giao diện trên Android</li>
+                     <li>Thiết kế web cho điện thoại di động</li>
+                   </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mt-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header fas fa-list-ul">
+            DANH MỤC
+          </div>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình Android nâng cao</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Xây dựng trang web</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Cơ sở dữ liệu</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">SQL Server</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Internet Maketing</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình hướng đối tượng với Java</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình PHP</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Điện toán đám mây</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình Android cơ bản</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình game 2D</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Thiết kế giao diện trên Android</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Thiết kế web cho điện thoại di động</a></li>
+            <li class="list-group-item p-2 pl-3"><a href="#" class="link-sidebar">Lập trình ASP.NET</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script th:src="@{/js/ControllerQuiz.js}"></script>
+</body>
+
+</html>

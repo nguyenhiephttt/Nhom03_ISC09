@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <script th:src="@{/js/ControllerQuiz.js}"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online Test</title>
+
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/css/index.css}">
+  <link rel="stylesheet" th:href="@{/fonts/fontawesome-free-5.9.0-web/css/all.min.css}">
+  
+  <script th:src="@{/js/angular.min.js}"></script>
+  <script th:src="@{/js/jquery.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+
+  <!--<script src="main1controller.js"></script>-->
+</head>
+
+
+<body>
+  <header>
+    <div class="container">
+      <img src="/images/banner.png" class="rounded" alt="Cinque Terre">
+    </div>
+  </header>
+  <div class="container">
+    <nav id="nav" class="navbar navbar-expand-sm navbar-light bg-dark">
+      <a class="navbar-brand nav-item" href="/index.html">FPT Polytechnic</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-navbar ">
+          <li class=" active">
+            <a class="nav-link nav-item" href="#!introduce">Giới Thiệu <span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="nav-link nav-item" href="#">Liên Hệ</a>
+          </li>
+          <li>
+            <a class="nav-link nav-item" href="#!suggest">Gợi Ý</a>
+          </li>
+          <li>
+            <a class="nav-link nav-item " href="#">Hỏi Đáp</a>
+          </li>
+        </ul>
+        <div>
+         <a class="nav-link nav-item " href="#" >Welcome <span sec:authentication="principal.username">User</span></a>
+        </div>
+        <div class="dropdown my-2 my-lg-0" style="cursor: pointer">
+          <a class="nav-link dropdown-toggle nav-item" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tài Khoản</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#!register">Đăng Ký</a>
+            <a class="dropdown-item" href="login">Đăng Nhập</a>
+            <a class="dropdown-item" href="#">Quên Mật Khẩu</a>
+            <hr>
+            <a class="dropdown-item" sec:authorize="isAuthenticated()" th:href="@{/logout}">Đăng Xuất</a>
+            <a class="dropdown-item" href="#">Đổi Mật Khẩu</a>
+            <a class="dropdown-item" href="#">Cập Nhật Tài Khoản</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container mt-3" ng-app="Quizs">
+    <div class="row m-auto">
+      <div class="col-8 m-0">
+        <div class="container ml-5">
+          <div class="row">
+            <div class="card-columns" id="remove">
+              <div class="card ml-5" ng-repeat="birds in div">
+                <a href="{{birds.Url}}">
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <img ng-src="images/logos/{{birds.Logo}}" alt="">
+                    </blockquote>
+                  </div>
+                  <div class="card-footer">
+                    <p id="shorten-string" data-toggle="tooltip" title="{{birds.Name}}">{{birds.Name}}</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row m-left-button-group">
+              <div class="container " ng-app="Quizs">
+                <div class="row button-group">
+                  <div class="btn-group ">
+                    <button type="button" class="btn btn-outline-dark" ng-click="prev()">
+                      <a style="color: #0077ff"><i class="fas fa-angle-left"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                      <a style="color: #0077ff"><i class="fas fa-angle-up"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark">
+                      <a style="color: #0077ff"><i class="fas fa-angle-down"></i></a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark" ng-click="next()">
+                      <a style="color: #0077ff"><i class="fas fa-angle-right"></i></a>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;" ng-app="Quizs">
+          <div class="card-header fas fa-list-ul">
+            DANH MỤC
+          </div>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item p-2 pl-3" ng-repeat="x in mydata"><a href="#">{{x.Name}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <script th:src="@{js/animation.js}"></script>
+</body>
+
+
+
+</html>

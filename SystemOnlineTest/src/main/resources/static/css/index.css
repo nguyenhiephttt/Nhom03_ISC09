@@ -1,0 +1,53 @@
+
+body{
+    background: #ffffff;
+    font-family: sans-serif;
+}
+/*bg-color-navigation*/
+.ml-one-col-test{
+    margin-left: 10%
+}
+/*navigation item*/
+.nav-item{
+    color: #ffffff !important;
+}
+
+/*button-gruop*/
+
+.button-group{
+    margin-left:28% !important;
+}
+/*link*/
+.card a{
+    text-decoration:none;
+    color: #000000;
+}
+.card a:hover{
+    text-decoration:none !important;
+    color: #000000;
+}
+/*link sideba*/
+.link-sidebar{
+  color: #000000 !important;
+}
+
+.link-sidebar:hover{
+  text-decoration: none !important;
+}
+.card-with{
+    width: 100%;
+    position:relative ;
+    columns: count 2px; 
+}
+
+#shorten-string{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+/*m-left-button-group*/
+.m-left-button-group{
+    margin-left: 30%
+}

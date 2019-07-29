@@ -1,0 +1,25 @@
+body{
+    background: #ffffff;
+    font-family: sans-serif;
+}
+/*bg-color-navigation*/
+.ml-one-col-test{
+    margin-left: 10%
+}
+/*navigation item*/
+.nav-item{
+    color: #ffffff !important;
+}
+
+.button-group-topic{
+    margin-left:38% !important; 
+}
+.mark-question-align-left{
+    text-align: left !important; 
+}
+.mark-text-align-right{
+    float: right; 
+}
+.card-header-topic{
+    text-transform: uppercase;
+}
